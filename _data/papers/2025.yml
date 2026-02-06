@@ -1,0 +1,38 @@
+-
+  layout: paper
+  paper-type: inproceedings
+  selected: n
+  year: 2023
+  img: adam_gn.png
+  title: "Adam or Gauss-Newton? A Comparative Study In Terms of Basis Alignment and SGD Noise"
+  authors: "Bingbin Liu, Rachit Bansal, Depen Morwani, Nikhil Vyas, David Alvarez-Melis, Sham M Kakade"
+  conf_name: ICML (under review)
+  conf_year: 2026
+  url: "https://arxiv.org/abs/2510.13680"
+  abstract: "Diagonal preconditioners are computationally feasible approximate to second-order optimizers, which have shown significant promise in accelerating training of deep learning models. Two predominant approaches are based on Adam and Gauss-Newton (GN) methods: the former leverages statistics of current gradients and is the de-factor optimizers for neural networks, and the latter uses the diagonal elements of the Gauss-Newton matrix and underpins some of the recent diagonal optimizers such as Sophia. In this work, we compare these two diagonal preconditioning methods through the lens of two key factors: the choice of basis in the preconditioner, and the impact of gradient noise from mini-batching. To gain insights, we analyze these optimizers on quadratic objectives and logistic regression under all four quadrants. We show that regardless of the basis, there exist instances where Adam outperforms both GN−1 and GN−1/2 in full-batch settings. Conversely, in the stochastic regime, Adam behaves similarly to GN−1/2 for linear regression under a Gaussian data assumption. These theoretical results are supported by empirical studies on both convex and non-convex objectives."
+
+-
+  layout: paper
+  paper-type: inproceedings
+  selected: y
+  year: 2025
+  img: scale_rl.png
+  title: "The Art of Scaling Reinforcement Learning Compute for LLMs"
+  authors: "Reinforcement learning (RL) has become central to training large language models (LLMs), yet the field lacks predictive scaling methodologies comparable to those established for pre-training. Despite rapidly rising compute budgets, there is no principled understanding of how to evaluate algorithmic improvements for scaling RL compute. We present the first large-scale systematic study, amounting to more than 400,000 GPU-hours, that defines a principled framework for analyzing and predicting RL scaling in LLMs. We fit sigmoidal compute-performance curves for RL training and ablate a wide range of common design choices to analyze their effects on asymptotic performance and compute efficiency. We observe: (1) Not all recipes yield similar asymptotic performance, (2) Details such as loss aggregation, normalization, curriculum, and off-policy algorithm primarily modulate compute efficiency without materially shifting the asymptote, and (3) Stable, scalable recipes follow predictable scaling trajectories, enabling extrapolation from smaller-scale runs. Combining these insights, we propose a best-practice recipe, ScaleRL, and demonstrate its effectiveness by successfully scaling and predicting validation performance on a single RL run scaled up to 100,000 GPU-hours. Our work provides both a scientific framework for analyzing scaling in RL and a practical recipe that brings RL training closer to the predictability long achieved in pre-training."
+  conf_name: ICLR (Oral Presentation)
+  conf_year: 2026
+  url: "https://arxiv.org/abs/2510.13786"
+  abstract: "Reinforcement learning (RL) has become central to training large language models (LLMs), yet the field lacks predictive scaling methodologies comparable to those established for pre-training. Despite rapidly rising compute budgets, there is no principled understanding of how to evaluate algorithmic improvements for scaling RL compute. We present the first large-scale systematic study, amounting to more than 400,000 GPU-hours, that defines a principled framework for analyzing and predicting RL scaling in LLMs. We fit sigmoidal compute-performance curves for RL training and ablate a wide range of common design choices to analyze their effects on asymptotic performance and compute efficiency. We observe: (1) Not all recipes yield similar asymptotic performance, (2) Details such as loss aggregation, normalization, curriculum, and off-policy algorithm primarily modulate compute efficiency without materially shifting the asymptote, and (3) Stable, scalable recipes follow predictable scaling trajectories, enabling extrapolation from smaller-scale runs. Combining these insights, we propose a best-practice recipe, ScaleRL, and demonstrate its effectiveness by successfully scaling and predicting validation performance on a single RL run scaled up to 100,000 GPU-hours. Our work provides both a scientific framework for analyzing scaling in RL and a practical recipe that brings RL training closer to the predictability long achieved in pre-training."
+
+-
+  layout: paper
+  paper-type: inproceedings
+  selected: y
+  year: 2025
+  img: ttt.png
+  title: "Let's (not) just put things in Context: Test-Time Training for Long-Context LLMs"
+  authors: "Rachit Bansal, Aston Zhang, Rishabh Tiwari, Lovish Madaan, Sai Surya Duvvuri, Devvrit Khatri, David Brandfonbrener, David Alvarez-Melis, Prajjwal Bhargava, Mihir Sanjay Kale, Samy Jelassi"
+  conf_name: ICLR
+  conf_year: 2026
+  url: "https://arxiv.org/abs/2512.13898"
+  abstract: "Progress on training and architecture strategies has enabled LLMs with millions of tokens in context length. However, empirical evidence suggests that such long-context LLMs can consume far more text than they can reliably use. On the other hand, it has been shown that inference-time compute can be used to scale performance of LLMs, often by generating thinking tokens, on challenging tasks involving multi-step reasoning. Through controlled experiments on sandbox long-context tasks, we find that such inference-time strategies show rapidly diminishing returns and fail at long context. We attribute these failures to score dilution, a phenomenon inherent to static self-attention. Further, we show that current inference-time strategies cannot retrieve relevant long-context signals under certain conditions. We propose a simple method that, through targeted gradient updates on the given context, provably overcomes limitations of static self-attention. We find that this shift in how inference-time compute is spent leads to consistently large performance improvements across models and long-context benchmarks. Our method leads to large 12.6 and 14.1 percentage point improvements for Qwen3-4B on average across subsets of LongBench-v2 and ZeroScrolls benchmarks. The takeaway is practical: for long context, a small amount of context-specific training is a better use of inference compute than current inference-time scaling strategies like producing more thinking tokens."

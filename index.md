@@ -7,7 +7,7 @@ description: I am Rachit. More details inside!
 ![i_am_rachit](./img/people/me.png){: style="float: right; margin: 0px 20px; width: 180px;" name="fox"}
 
 
-I am Rachit, a PhD student at Harvard University advised by [Prof. David Alvarez-Melis](https://dmelis.github.io). 
+I am Rachit, a PhD student at Harvard University advised by [Prof. Sham Kakade](https://shamulent.github.io) and [Prof. David Alvarez-Melis](https://dmelis.github.io).
 <!-- Broadly, I am interested in making language models more useful and controllable. I am also interested in understanding and analysis.-->
 <!-- I am also interested in robust evaluation and analysis.-->
 
@@ -18,6 +18,10 @@ I was fortunate to collaborate with [Danish](https://www.cs.cmu.edu/~ddanish/) o
 I also spent a couple of wonderful summers as a part of the Google Summer of Code program with the Cuneiform Digital Library Initiative ([CDLI](https://cdli.ucla.edu/)). Here, I was advised by [Jacob](https://www.wolfson.ox.ac.uk/person/jacob-dahl) and [Niko](https://www.english-linguistics.de/nschenk/).
 
 ## <span style="color:darkblue">News and Timeline </span>
+**2026**
+* **January** Our paper on Test-time Training for long-context LLMs accepted at ICLR 2026!
+* **January** Our paper on RL Scaling Laws in accepted as an Oral at ICLR 2026!
+
 **2025**
 * **May** Interning at Meta's Llama Pre-training team this Summer!
 
@@ -37,17 +41,17 @@ I also spent a couple of wonderful summers as a part of the Google Summer of Cod
 
 **2021**
 * **November**  Our work evaluating model explanations is accepted at TACL! In collaboration with [Danish](https://www.cs.cmu.edu/~ddanish/).
-* **July**    Attending the 11th Lisbon Machine Learning Summer School ([LXMLS 2021](http://lxmls.it.pt/2021/)).
+<!-- * **July**    Attending the 11th Lisbon Machine Learning Summer School ([LXMLS 2021](http://lxmls.it.pt/2021/)).
 <!-- * June 2021:    Volunteering at NAACL 2021. -->
-* **May**     Work with CDLI accepted at ACL SRW 2021. Gauging machine translation and sequence labeling for extremely low-resource languages. 
-* **May**     Starting as a Research Intern at Adobe’s Media and Data Science Research (MDSR).
+<!-- * **May**     Work with CDLI accepted at ACL SRW 2021. Gauging machine translation and sequence labeling for extremely low-resource languages. 
+* **May**     Starting as a Research Intern at Adobe’s Media and Data Science Research (MDSR). -->
 <!-- * May 2021:     Volunteering at ICLR 2021. -->
 <!-- * **February**  My first research paper accepted at PAKDD 2021. Detecting fake news early, with [Prof. Tanmoy Chakraborty](http://faculty.iiitd.ac.in/~tanmoy/) and [William Scott](https://www.linkedin.com/in/williamscottp/). -->
 
-**2020**
-* **November**  Started collaborating with [Danish](https://www.cs.cmu.edu/~ddanish/) (LTI, CMU) on evaluating neural explanations for NLP.
+<!-- **2020** -->
+<!-- * **November**  Started collaborating with [Danish](https://www.cs.cmu.edu/~ddanish/) (LTI, CMU) on evaluating neural explanations for NLP. -->
 <!-- * Nov 2020:     Volunteering at EMNLP 2020. -->
-* **June**    Contributing to the [Cuneiform Digital Library Initiative](https://cdli.ucla.edu/) (CDLI) as a part of [GSoC](https://summerofcode.withgoogle.com/)!
+<!-- * **June**    Contributing to the [Cuneiform Digital Library Initiative](https://cdli.ucla.edu/) (CDLI) as a part of [GSoC](https://summerofcode.withgoogle.com/)! --> -->
 <!-- * June 2020:    Volunteering at ACL 2020. -->
 <!-- * **May**     Joined [LCS2](http://lcs2.iiitd.edu.in/), IIIT-D as a Research Intern. Working on closed-domain misinformation detection across social networks. -->
 <!-- * May 2019:     Serving as a Teaching Assistant for the Machine Learning course at Coding Blocks. With [Prateek](http://www.prateeknarang.com/) and [Manu](https://www.manuspillai.in/). -->
