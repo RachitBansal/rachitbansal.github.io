@@ -5,7 +5,7 @@
   year: 2023
   img: adam_gn.png
   title: "Adam or Gauss-Newton? A Comparative Study In Terms of Basis Alignment and SGD Noise"
-  authors: "Bingbin Liu, Rachit Bansal, Depen Morwani, Nikhil Vyas, David Alvarez-Melis, Sham M Kakade"
+  authors: "Bingbin Liu*, <u>Rachit Bansal</u>*, Depen Morwani*, Nikhil Vyas, David Alvarez-Melis, Sham M Kakade"
   conf_name: ICML (under review)
   conf_year: 2026
   url: "https://arxiv.org/abs/2510.13680"
@@ -18,7 +18,7 @@
   year: 2025
   img: scale_rl.png
   title: "The Art of Scaling Reinforcement Learning Compute for LLMs"
-  authors: "Reinforcement learning (RL) has become central to training large language models (LLMs), yet the field lacks predictive scaling methodologies comparable to those established for pre-training. Despite rapidly rising compute budgets, there is no principled understanding of how to evaluate algorithmic improvements for scaling RL compute. We present the first large-scale systematic study, amounting to more than 400,000 GPU-hours, that defines a principled framework for analyzing and predicting RL scaling in LLMs. We fit sigmoidal compute-performance curves for RL training and ablate a wide range of common design choices to analyze their effects on asymptotic performance and compute efficiency. We observe: (1) Not all recipes yield similar asymptotic performance, (2) Details such as loss aggregation, normalization, curriculum, and off-policy algorithm primarily modulate compute efficiency without materially shifting the asymptote, and (3) Stable, scalable recipes follow predictable scaling trajectories, enabling extrapolation from smaller-scale runs. Combining these insights, we propose a best-practice recipe, ScaleRL, and demonstrate its effectiveness by successfully scaling and predicting validation performance on a single RL run scaled up to 100,000 GPU-hours. Our work provides both a scientific framework for analyzing scaling in RL and a practical recipe that brings RL training closer to the predictability long achieved in pre-training."
+  authors: "Devvrit Khatri, Lovish Madaan, Rishabh Tiwari, <u>Rachit Bansal</u>, Sai Surya Duvvuri, Manzil Zaheer, Inderjit S. Dhillon, David Brandfonbrener, Rishabh Agarwal"
   conf_name: ICLR (Oral Presentation)
   conf_year: 2026
   url: "https://arxiv.org/abs/2510.13786"
@@ -31,7 +31,7 @@
   year: 2025
   img: ttt.png
   title: "Let's (not) just put things in Context: Test-Time Training for Long-Context LLMs"
-  authors: "Rachit Bansal, Aston Zhang, Rishabh Tiwari, Lovish Madaan, Sai Surya Duvvuri, Devvrit Khatri, David Brandfonbrener, David Alvarez-Melis, Prajjwal Bhargava, Mihir Sanjay Kale, Samy Jelassi"
+  authors: "<u>Rachit Bansal</u>, Aston Zhang, Rishabh Tiwari, Lovish Madaan, Sai Surya Duvvuri, Devvrit Khatri, David Brandfonbrener, David Alvarez-Melis, Prajjwal Bhargava, Mihir Sanjay Kale, Samy Jelassi"
   conf_name: ICLR
   conf_year: 2026
   url: "https://arxiv.org/abs/2512.13898"
