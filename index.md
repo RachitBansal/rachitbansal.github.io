@@ -19,11 +19,11 @@ I also spent a couple of wonderful summers as a part of the Google Summer of Cod
 
 ## <span style="color:darkblue">News and Timeline </span>
 **2026**
-* **January** Our paper on Test-time Training for long-context LLMs accepted at ICLR 2026!
-* **January** Our paper on RL Scaling Laws in accepted as an Oral at ICLR 2026!
+* **January** Our paper on [Test-time Training for long-context LLMs](https://arxiv.org/abs/2512.13898) with Meta is accepted at ICLR 2026!
+* **January** Our paper on [RL Scaling Laws](https://arxiv.org/abs/2510.13786) with Meta is accepted as an Oral at ICLR 2026!
 
 **2025**
-* **May** Interning at Meta's Llama Pre-training team this Summer!
+* **May** Interning at Meta Superintelligence Lab this Summer!
 
 **2024**
 * **August** Starting my doctorate at Harvard University!
@@ -34,7 +34,7 @@ I also spent a couple of wonderful summers as a part of the Google Summer of Cod
 
 **2022**
 * **September**  My bachelor's thesis work done at the Technion was accepted at NeurIPS 2022!
-* **August**  Joining [Google DeepMind](https://research.google/locations/india/) as a pre-doctoral researcher.
+* **August**  Joining Google DeepMind as a pre-doctoral researcher.
 * **June**    Releasing the [pre-print](https://arxiv.org/abs/2205.12411) for our work on analyzing linear mode connectivity and out-of-distribution behaviour. Led by [Jeevesh](https://github.com/Jeevesh8) and mentored by [Naomi](http://nsaphra.github.io/).
 * **May**     Two papers on commonsense and factual reasoning done at Adobe MDSR accepted at NAACL 2022!
 * **January** Starting my bachelor's thesis with [Yonatan](http://www.cs.technion.ac.il/~belinkov/) at the Technion, Israel!
