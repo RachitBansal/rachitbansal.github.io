@@ -1,12 +1,12 @@
--
-  layout: paper
-  paper-type: inproceedings
-  selected: y
-  year: 2020
-  img: cross_sean.png
-  title: "Cross-SEAN: A cross-stitch semi-supervised neural attention model for COVID-19 fake news detection"
-  authors: "William Scott Paka, <u>Rachit Bansal</u>, Abhay Kaushik, Shubhashis Sengupta, Tanmoy Chakraborty"
-  conf_name: Applied Soft Computing
-  conf_year: 2021
-  url: "https://arxiv.org/pdf/2102.08924"
-  abstract: "As the COVID-19 pandemic sweeps across the world, it has been accompanied by a tsunami of fake news and misinformation on social media. At the time when reliable information is vital for public health and safety, COVID-19 related fake news has been spreading even faster than the facts. During times such as the COVID-19 pandemic, fake news can not only cause intellectual confusion but can also place lives of people at risk. This calls for an immediate need to contain the spread of such misinformation on social media. We introduce CTF, the first COVID-19 Twitter fake news dataset with labeled genuine and fake tweets. Additionally, we propose Cross-SEAN, a cross-stitch based semi-supervised end-to-end neural attention model, which leverages the large amount of unlabelled data. Cross-SEAN partially generalises to emerging fake news as it learns from relevant external knowledge. We compare Cross-SEAN with seven state-of-the-art fake news detection methods. We observe that it achieves 0.95 F1 Score on CTF, outperforming the best baseline by 9%. We also develop Chrome-SEAN, a Cross-SEAN based chrome extension for real-time detection of fake tweets."
+# -
+#   layout: paper
+#   paper-type: inproceedings
+#   selected: y
+#   year: 2020
+#   img: cross_sean.png
+#   title: "Cross-SEAN: A cross-stitch semi-supervised neural attention model for COVID-19 fake news detection"
+#   authors: "William Scott Paka, <u>Rachit Bansal</u>, Abhay Kaushik, Shubhashis Sengupta, Tanmoy Chakraborty"
+#   conf_name: Applied Soft Computing
+#   conf_year: 2021
+#   url: "https://arxiv.org/pdf/2102.08924"
+#   abstract: "As the COVID-19 pandemic sweeps across the world, it has been accompanied by a tsunami of fake news and misinformation on social media. At the time when reliable information is vital for public health and safety, COVID-19 related fake news has been spreading even faster than the facts. During times such as the COVID-19 pandemic, fake news can not only cause intellectual confusion but can also place lives of people at risk. This calls for an immediate need to contain the spread of such misinformation on social media. We introduce CTF, the first COVID-19 Twitter fake news dataset with labeled genuine and fake tweets. Additionally, we propose Cross-SEAN, a cross-stitch based semi-supervised end-to-end neural attention model, which leverages the large amount of unlabelled data. Cross-SEAN partially generalises to emerging fake news as it learns from relevant external knowledge. We compare Cross-SEAN with seven state-of-the-art fake news detection methods. We observe that it achieves 0.95 F1 Score on CTF, outperforming the best baseline by 9%. We also develop Chrome-SEAN, a Cross-SEAN based chrome extension for real-time detection of fake tweets."

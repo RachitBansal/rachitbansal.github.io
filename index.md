@@ -19,28 +19,26 @@ I also spent a couple of wonderful summers as a part of the Google Summer of Cod
 
 ## <span style="color:darkblue">News and Timeline </span>
 **2026**
-* **January** Our paper on [Test-time Training for long-context LLMs](https://arxiv.org/abs/2512.13898) with Meta is accepted at ICLR 2026!
-* **January** Our paper on [RL Scaling Laws](https://arxiv.org/abs/2510.13786) with Meta is accepted as an Oral at ICLR 2026!
+* **January** Our work at Meta: [Test-time Training for long-context LLMs](https://arxiv.org/abs/2512.13898) and [RL Scaling Laws](https://arxiv.org/abs/2510.13786) accepted at ICLR 2026!
 
 **2025**
-* **May** Interning at Meta Superintelligence Lab this Summer!
+* **May** Interning at Meta Superintelligence Lab (MSL) this Summer!
 
 **2024**
 * **August** Starting my doctorate at Harvard University!
-* **May**  Presenting our work on composing large language models at ICLR 2024 in Vienna!
+* **May**  Presenting our work on [composing LLMs](https://arxiv.org/abs/2401.02412) at ICLR 2024 in Vienna!
 
 **2023**
-* **May**  Presenting our work on linear mode connectivity at ICLR 2023 in Kigali!
+* **May**  Presenting our work on [linear mode connectivity](https://arxiv.org/abs/2205.12411) at ICLR 2023 in Kigali! With [Jeevesh](https://github.com/Jeevesh8) and [Naomi](http://nsaphra.github.io/).
 
 **2022**
 * **September**  My bachelor's thesis work done at the Technion was accepted at NeurIPS 2022!
-* **August**  Joining Google DeepMind as a pre-doctoral researcher.
-* **June**    Releasing the [pre-print](https://arxiv.org/abs/2205.12411) for our work on analyzing linear mode connectivity and out-of-distribution behaviour. Led by [Jeevesh](https://github.com/Jeevesh8) and mentored by [Naomi](http://nsaphra.github.io/).
-* **May**     Two papers on commonsense and factual reasoning done at Adobe MDSR accepted at NAACL 2022!
+* **August**  Joining Google DeepMind as a pre-doctoral researcher!
+* **May**     Two papers on [commonsense](https://openreview.net/pdf?id=1yieqYLUIXj) and [factual reasoning](https://openreview.net/pdf?id=fn5K7VfI3MV) done at Adobe MDSR accepted at NAACL 2022!
 * **January** Starting my bachelor's thesis with [Yonatan](http://www.cs.technion.ac.il/~belinkov/) at the Technion, Israel!
 
 **2021**
-* **November**  Our work evaluating model explanations is accepted at TACL! In collaboration with [Danish](https://www.cs.cmu.edu/~ddanish/).
+* **November**  Our work [evaluating model explanations](https://arxiv.org/abs/2012.00893) is accepted at TACL! In collaboration with [Danish](https://www.cs.cmu.edu/~ddanish/) and others at CMU.
 <!-- * **July**    Attending the 11th Lisbon Machine Learning Summer School ([LXMLS 2021](http://lxmls.it.pt/2021/)).
 <!-- * June 2021:    Volunteering at NAACL 2021. -->
 <!-- * **May**     Work with CDLI accepted at ACL SRW 2021. Gauging machine translation and sequence labeling for extremely low-resource languages. 
@@ -51,7 +49,7 @@ I also spent a couple of wonderful summers as a part of the Google Summer of Cod
 <!-- **2020** -->
 <!-- * **November**  Started collaborating with [Danish](https://www.cs.cmu.edu/~ddanish/) (LTI, CMU) on evaluating neural explanations for NLP. -->
 <!-- * Nov 2020:     Volunteering at EMNLP 2020. -->
-<!-- * **June**    Contributing to the [Cuneiform Digital Library Initiative](https://cdli.ucla.edu/) (CDLI) as a part of [GSoC](https://summerofcode.withgoogle.com/)! --> -->
+<!-- * **June**    Contributing to the [Cuneiform Digital Library Initiative](https://cdli.ucla.edu/) (CDLI) as a part of [GSoC](https://summerofcode.withgoogle.com/)! -->
 <!-- * June 2020:    Volunteering at ACL 2020. -->
 <!-- * **May**     Joined [LCS2](http://lcs2.iiitd.edu.in/), IIIT-D as a Research Intern. Working on closed-domain misinformation detection across social networks. -->
 <!-- * May 2019:     Serving as a Teaching Assistant for the Machine Learning course at Coding Blocks. With [Prateek](http://www.prateeknarang.com/) and [Manu](https://www.manuspillai.in/). -->

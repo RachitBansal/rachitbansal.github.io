@@ -8,7 +8,7 @@
   authors: "Danish Pruthi, <u>Rachit Bansal</u>, Bhuwan Dhingra, Livio Baldini Soares, Michael Collins, Zachary C. Lipton, Graham Neubig, William W. Cohen"
   conf_name: TACL
   conf_year: 2021
-  url: "https://arxiv.org/pdf/2012.00893.pdf"
+  url: "https://arxiv.org/abs/2012.00893"
   code: "https://github.com/danishpruthi/evaluating-explanations"
   abstract: "While many methods purport to explain predictions by highlighting salient features, what precise aims these explanations serve and how to evaluate their utility are often unstated. In this work, we formalize the value of explanations using a student-teacher paradigm that measures the extent to which explanations improve student models in learning to simulate the teacher model on unseen examples for which explanations are unavailable. Student models incorporate explanations in training (but not prediction) procedures. Unlike many prior proposals to evaluate explanations, our approach cannot be easily gamed, enabling principled, scalable, and automatic evaluation of attributions. Using our framework, we compare multiple attribution methods and observe consistent and quantitative differences amongst them across multiple learning strategies."
 -
@@ -45,18 +45,18 @@
   authors: "<u>Rachit Bansal</u>, Himanshu Choudhary, Ravneet Punia, Niko Schenk, Jacob L Dahl, Émilie Pagé-Perron"
   conf_name: ACL SRW
   conf_year: 2021
-  url: "https://arxiv.org/pdf/2105.14515.pdf"
+  url: "https://arxiv.org/abs/2105.14515"
   code: "https://github.com/cdli-gh/Semi-Supervised-NMT-for-Sumerian-English"
   abstract: "Despite the recent advancements of attention-based deep learning architectures across a majority of Natural Language Processing tasks, their application remains limited in a low-resource setting because of a lack of pre-trained models for such languages. In this study, we make the first attempt to investigate the challenges of adapting these techniques for an extremely low-resource language -- Sumerian cuneiform -- one of the world's oldest written languages attested from at least the beginning of the 3rd millennium BC. Specifically, we introduce the first cross-lingual information extraction pipeline for Sumerian, which includes part-of-speech tagging, named entity recognition, and machine translation. We further curate InterpretLR, an interpretability toolkit for low-resource NLP, and use it alongside human attributions to make sense of the models. We emphasize on human evaluations to gauge all our techniques. Notably, most components of our pipeline can be generalised to any other language to obtain an interpretable execution of the techniques, especially in a low-resource setting. We publicly release all software, model checkpoints, and a novel dataset with domain-specific pre-processing to promote further research."
--
-  layout: paper
-  paper-type: inproceedings
-  selected: y
-  year: 2021
-  img: endemic.png
-  title: "Combining exogenous and endogenous signals with a semi-supervised co-attention network for early detection of COVID-19 fake tweets"
-  authors: "<u>Rachit Bansal</u>, William Scott Paka, Shubhashis Sengupta, Tanmoy Chakraborty"
-  conf_name: PAKDD
-  conf_year: 2021
-  url: "https://arxiv.org/pdf/2104.05321.pdf"
-  abstract: "Fake tweets are observed to be ever-increasing, demanding immediate countermeasures to combat their spread. During COVID-19, tweets with misinformation should be flagged and neutralized in their early stages to mitigate the damages. Most of the existing methods for early detection of fake news assume to have enough propagation information for large labeled tweets -- which may not be an ideal setting for cases like COVID-19 where both aspects are largely absent. In this work, we present ENDEMIC, a novel early detection model which leverages exogenous and endogenous signals related to tweets, while learning on limited labeled data. We first develop a novel dataset, called CTF for early COVID-19 Twitter fake news, with additional behavioral test sets to validate early detection. We build a heterogeneous graph with follower-followee, user-tweet, and tweet-retweet connections and train a graph embedding model to aggregate propagation information. Graph embeddings and contextual features constitute endogenous, while time-relative web-scraped information constitutes exogenous signals. ENDEMIC is trained in a semi-supervised fashion, overcoming the challenge of limited labeled data. We propose a co-attention mechanism to fuse signal representations optimally. Experimental results on ECTF, PolitiFact, and GossipCop show that ENDEMIC is highly reliable in detecting early fake tweets, outperforming nine state-of-the-art methods significantly."
+# -
+#   layout: paper
+#   paper-type: inproceedings
+#   selected: y
+#   year: 2021
+#   img: endemic.png
+#   title: "Combining exogenous and endogenous signals with a semi-supervised co-attention network for early detection of COVID-19 fake tweets"
+#   authors: "<u>Rachit Bansal</u>, William Scott Paka, Shubhashis Sengupta, Tanmoy Chakraborty"
+#   conf_name: PAKDD
+#   conf_year: 2021
+#   url: "https://arxiv.org/pdf/2104.05321.pdf"
+#   abstract: "Fake tweets are observed to be ever-increasing, demanding immediate countermeasures to combat their spread. During COVID-19, tweets with misinformation should be flagged and neutralized in their early stages to mitigate the damages. Most of the existing methods for early detection of fake news assume to have enough propagation information for large labeled tweets -- which may not be an ideal setting for cases like COVID-19 where both aspects are largely absent. In this work, we present ENDEMIC, a novel early detection model which leverages exogenous and endogenous signals related to tweets, while learning on limited labeled data. We first develop a novel dataset, called CTF for early COVID-19 Twitter fake news, with additional behavioral test sets to validate early detection. We build a heterogeneous graph with follower-followee, user-tweet, and tweet-retweet connections and train a graph embedding model to aggregate propagation information. Graph embeddings and contextual features constitute endogenous, while time-relative web-scraped information constitutes exogenous signals. ENDEMIC is trained in a semi-supervised fashion, overcoming the challenge of limited labeled data. We propose a co-attention mechanism to fuse signal representations optimally. Experimental results on ECTF, PolitiFact, and GossipCop show that ENDEMIC is highly reliable in detecting early fake tweets, outperforming nine state-of-the-art methods significantly."
