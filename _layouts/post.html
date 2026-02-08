@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="blog-post">
+
+  <header class="post-header">
+    <a href="{{ site.baseurl }}/blog" class="post-back">← Back to blog</a>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%B %d, %Y" }}{% if page.author %} · {{ page.author }}{% endif %}</p>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer">
+    <a href="{{ site.baseurl }}/blog" class="post-back-bottom">← All posts</a>
+  </footer>
+
+</article>

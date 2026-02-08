@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<div class="blog-page">
+
+  <header class="blog-header">
+    <h1 class="blog-page-title">{{ page.title }}</h1>
+    {% if page.description %}
+    <p class="blog-page-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  {{ content }}
+
+  <ul class="blog-list">
+    {% for post in site.posts %}
+    <li class="blog-card">
+      <a href="{{ post.url | prepend: site.baseurl }}" class="blog-card-link">
+        <span class="blog-card-date">{{ post.date | date: "%B %d, %Y" }}</span>
+        <h2 class="blog-card-title">{{ post.title }}</h2>
+        {% if post.excerpt %}
+        <p class="blog-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+        {% endif %}
+        <span class="blog-card-read">Read more →</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  {% if site.posts.size == 0 %}
+  <p class="blog-empty">No posts yet. Check back soon!</p>
+  {% endif %}
+
+</div>
