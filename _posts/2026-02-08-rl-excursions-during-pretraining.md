@@ -1,7 +1,8 @@
 ---
-layout: post
+layout: blog_post
 title: "RL Excursions During Pre-Training: How Early Is Too Early for On-Policy Learning?"
 date: 2026-02-08
+published: false
 excerpt: "We study what happens if we introduce on-policy reinforcement learning (RL) much earlier than the standard LLM pipeline. In a controlled math setting, RL can improve reasoning surprisingly early, sometimes matches the SFT→RL pipeline, and can either sharpen or expand the model’s output distribution depending on the training setup."
 ---
 
@@ -67,8 +68,8 @@ We ask what happens if we introduce RL **earlier** than the conventional pipelin
 
 We:
 - pretrain a **1B parameter** model from scratch,
-- save intermediate checkpoints \(M_t\) throughout pretraining,
-- and at each checkpoint \(M_t\), compare three “post-training” pipelines.
+- save intermediate checkpoints $M_t$ throughout pretraining,
+- and at each checkpoint $M_t$, compare three “post-training” pipelines.
 
 We focus on **Reinforcement Learning from Verifiable Rewards (RLVR)** using **Group Relative Policy Optimization (GRPO)** and the **VeRL** codebase.
 
@@ -103,7 +104,7 @@ We use the **OLMo2** architecture and training infrastructure, and pretrain:
 - sequence length: **4096**
 - batch size: **512**
 
-We save intermediate checkpoints \(M_t\) at different training stages (measured in pretraining tokens).
+We save intermediate checkpoints $M_t$ at different training stages (measured in pretraining tokens).
 
 ---
 
@@ -140,8 +141,8 @@ pass@k estimates the probability of obtaining at least one correct response when
 
 #### Prompting detail for base checkpoints
 
-Pretraining checkpoints \(M_t\) have only seen pretraining corpora and cannot consistently follow QA instructions. Therefore:
-- we evaluate \(M_t\) using **8-shot** prompts (in-context examples).
+Pretraining checkpoints $M_t$ have only seen pretraining corpora and cannot consistently follow QA instructions. Therefore:
+- we evaluate $M_t$ using **8-shot** prompts (in-context examples).
 
 For post-trained models:
 - we apply a formatting reward during RL and format OpenMathInstruct into QA format for SFT,
@@ -155,23 +156,23 @@ For post-trained models:
 ### Three training pipelines
 
 Let:
-- \(M_t\) denote the pretraining checkpoint at step \(t\),
-- \(M_T\) denote the final fully-pretrained model.
+- $M_t$ denote the pretraining checkpoint at step \(t\),
+- $M_t$ denote the final fully-pretrained model.
 
-At each checkpoint \(M_t\), we train and compare:
+At each checkpoint $M_t$, we train and compare:
 
-1. **RL only** (\(M^{RL}_t\))  
-   Start from \(M_t\) and train with the RL objective until convergence.
+1. **RL only** ($M^{RL}_t$)  
+   Start from $M_t$ and train with the RL objective until convergence.
 
-2. **SFT only** (\(M^{SFT}_t\))  
-   Start from \(M_t\) and perform SFT on ground-truth solutions until convergence.
+2. **SFT only** ($M^{SFT}_t$)  
+   Start from $M_t$ and perform SFT on ground-truth solutions until convergence.
 
-3. **Gold standard pipeline** (\(M^{SFT\rightarrow RL}_t\))  
-   First train SFT to obtain \(M^{SFT}_t\), then run GRPO on the same set of questions.
+3. **Gold standard pipeline** ($M^{SFT\rightarrow RL}_t$)  
+   First train SFT to obtain $M^{SFT}_t$, then run GRPO on the same set of questions.
 
 Why these baselines matter:
-- Comparing \(M^{RL}_t\) vs \(M^{SFT}_t\) isolates the effect of the **training objective** (RL vs SFT).
-- Comparing \(M^{RL}_t\) vs \(M^{SFT\rightarrow RL}_t\) evaluates whether RL alone can compete with the **current gold standard**.
+- Comparing $M^{RL}_t$ vs $M^{SFT}_t$ isolates the effect of the **training objective** (RL vs SFT).
+- Comparing $M^{RL}_t$ vs $M^{SFT\rightarrow RL}_t$ evaluates whether RL alone can compete with the **current gold standard**.
 
 We train all RL and SFT runs **until convergence**, with convergence checks included in the appendix.
 
@@ -206,17 +207,17 @@ This improvement occurs **prior to reaching** the Chinchilla-optimal number of t
 #### RLVR competes with the gold standard pipeline on GSM8K
 
 After around **\(t = 10B\)** tokens:
-- \(M^{RL}_t\) **outperforms** \(M^{SFT}_t\) on pass@1,
-- and performs **on par** with \(M^{SFT\rightarrow RL}_t\) on pass@1.
+- $M^{RL}_t$ **outperforms** $M^{SFT}_t$ on pass@1,
+- and performs **on par** with $M^{SFT\rightarrow RL}_t$ on pass@1.
 
 For pass@8 and pass@32:
-- \(M^{RL}_t\) performs on par with both \(M^{SFT}_t\) and \(M^{SFT\rightarrow RL}_t\).
+- $M^{RL}_t$ performs on par with both $M^{SFT}_t$ and $M^{SFT\rightarrow RL}_t$.
 
-A notable point is that \(M^{RL}_t\) never observes ground-truth reasoning traces; it develops reasoning capabilities entirely from self-generated on-policy traces and verifiable feedback—yet can match supervised learning on this benchmark.
+A notable point is that $M^{RL}_t$ never observes ground-truth reasoning traces; it develops reasoning capabilities entirely from self-generated on-policy traces and verifiable feedback—yet can match supervised learning on this benchmark.
 
 #### Figure 2 (paper): GSM8K performance
 
-**Caption (paper):** We report accuracy on pass@k for \(M_t\), \(M^{SFT}_t\), \(M^{SFT\rightarrow RL}_t\), and \(M^{RL}_t\) evaluated on GSM8K, after training on the GSM8K-like subset of OpenMathInstruct. The base model is evaluated using 8-shot prompts, while all other models are evaluated with 0-shot prompts. For each method on top of \(M_t\), we report accuracy of the final converged checkpoint.
+**Caption (paper):** We report accuracy on pass@k for $M_t$, $M^{SFT}_t$, $M^{SFT\rightarrow RL}_t$, and $M^{RL}_t$ evaluated on GSM8K, after training on the GSM8K-like subset of OpenMathInstruct. The base model is evaluated using 8-shot prompts, while all other models are evaluated with 0-shot prompts. For each method on top of $M_t$, we report accuracy of the final converged checkpoint.
 
 **Include in blog (optional):**
 ```md
@@ -232,14 +233,14 @@ On the harder MATH benchmark (training on full OpenMathInstruct), the picture is
 #### MATH: RL improves but does not catch up to SFT or SFT→RL
 
 On MATH:
-- \(M^{RL}_t\) consistently improves pass@1, pass@8, and pass@32 by **5% to 10%** over the base checkpoint \(M_t\),
-- but it never catches up to \(M^{SFT}_t\) and \(M^{SFT\rightarrow RL}_t\).
+- $M^{RL}_t$ consistently improves pass@1, pass@8, and pass@32 by **5% to 10%** over the base checkpoint $M_t$,
+- but it never catches up to $M^{SFT}_t$ and $M^{SFT\rightarrow RL}_t$.
 
 This suggests a limitation of relying on the RLVR objective (i.e., on-policy data) from pretraining checkpoints, potentially related to the difficulty of the task.
 
 #### Figure 3 (paper): MATH performance
 
-**Caption (paper):** We report pass@k accuracy for \(M_t\), \(M^{SFT}_t\), \(M^{SFT\rightarrow RL}_t\), and \(M^{RL}_t\) evaluated on MATH after training on full OpenMathInstruct. Unlike GSM8K, on this harder benchmark, \(M^{RL}_t\) brings substantial gains over \(M_t\) but fails to fully match \(M^{SFT}_t\) and \(M^{SFT\rightarrow RL}_t\), indicating a limitation of using RL early in pretraining.
+**Caption (paper):** We report pass@k accuracy for $M_t$, $M^{SFT}_t$, $M^{SFT\rightarrow RL}_t$, and $M^{RL}_t$ evaluated on MATH after training on full OpenMathInstruct. Unlike GSM8K, on this harder benchmark, $M^{RL}_t$ brings substantial gains over $M_t$ but fails to fully match $M^{SFT}_t$ and $M^{SFT\rightarrow RL}_t$, indicating a limitation of using RL early in pretraining.
 
 **Include in blog (optional):**
 ```md
@@ -268,7 +269,7 @@ M_t \rightarrow M^{SFT}_t \rightarrow M^{SFT\rightarrow RL}_t,
 we reproduce sharpening behavior.
 
 In the paper’s example training dynamics:
-- pass@1 continues to improve from \(M_t\) to \(M^{SFT}_t\) and then during RL,
+- pass@1 continues to improve from $M_t$ to $M^{SFT}_t$ and then during RL,
 - but pass@32 gains during SFT are followed by a **slight decrease** during RL.
 
 We hypothesize that sharpening occurs because during SFT the model has already seen ground-truth solutions on the same set of questions, so RL primarily refines existing capabilities rather than discovering new reasoning paths.
@@ -288,11 +289,11 @@ In the paper’s direct RL training dynamics example:
 
 Without prior exposure to ground-truth solutions, the model explores and discovers new reasoning paths through on-policy learning.
 
-#### Figure 4 (paper): RL training dynamics
+#### Figure 4: RL training dynamics
 
-**Caption (paper):** GSM8K accuracy (pass@1 and pass@32) across training stages. Left: Standard SFT→RL pipeline shows sharpening (pass@1 improves, pass@32 decreases during RL). Right: Direct RL training expands distribution (both metrics improve).
+**Caption:** GSM8K accuracy (pass@1 and pass@32) across training stages. Left: Standard SFT→RL pipeline shows sharpening (pass@1 improves, pass@32 decreases during RL). Right: Direct RL training expands distribution (both metrics improve).
 
-**Include in blog (optional):**
+<!-- **Include in blog (optional):** -->
 ```md
 ![Figure 4: RL training dynamics with and without SFT (sharpening vs expansion).](/assets/img/rl-pretraining/figure4.png)
 ```
@@ -304,9 +305,9 @@ Without prior exposure to ground-truth solutions, the model explores and discove
 Despite the promising results, direct RL exhibits instability on early checkpoints.
 
 Between **\(t = 4B\)** and **\(t = 10B\)** pretraining tokens:
-- \(M^{RL}_t\) can be highly non-deterministic across training seeds.
+- $M^{RL}_t$ can be highly non-deterministic across training seeds.
 - Some seeds yield significant improvements on GSM8K.
-- Others fail to improve over \(M_t\) at all.
+- Others fail to improve over $M_t$ at all.
 
 For earlier checkpoints, we therefore ran RL across **4 seeds** and reported the best-performing seed in the GSM8K results.
 
@@ -448,7 +449,7 @@ Increasing rollouts can help in sparse-reward regimes, but our experiments show 
 
 ### A.1 RL training convergence
 
-For all \(M^{RL}_t\) runs across checkpoints, we track:
+For all $M^{RL}_t$ runs across checkpoints, we track:
 - RL training reward,
 - validation reward (on a manually split subset of OpenMathInstruct),
 - and GSM8K reward / pass@1.
@@ -464,7 +465,7 @@ These curves converge by the end of training. For earlier checkpoints that exhib
 
 ### A.2 Seed dependence
 
-We compare a favorable seed and an unfavorable seed for \(M^{RL}_t\) at \(t = 4B\) tokens:
+We compare a favorable seed and an unfavorable seed for $M^{RL}_t$ at \(t = 4B\) tokens:
 
 - Training reward curves are nearly identical across seeds.
 - Validation reward diverges.
@@ -483,7 +484,7 @@ This reveals a disconnect between training reward and actual reasoning capabilit
 
 ### A.3 SFT convergence
 
-We compare different numbers of SFT epochs to train \(M^{SFT}_t\). Performance converges after **5 epochs**, which we use as the standard protocol.
+We compare different numbers of SFT epochs to train $M^{SFT}_t$. Performance converges after **5 epochs**, which we use as the standard protocol.
 
 **Include in blog (optional):**
 ```md
@@ -494,7 +495,7 @@ We compare different numbers of SFT epochs to train \(M^{SFT}_t\). Performance c
 
 ### A.4 Evaluating base checkpoints with n-shot prompting
 
-We evaluate base checkpoints \(M_t\) with different numbers of in-context examples (n-shot).
+We evaluate base checkpoints $M_t$ with different numbers of in-context examples (n-shot).
 
 On GSM8K:
 - 0-shot, 1-shot, and 8-shot prompting are compared.

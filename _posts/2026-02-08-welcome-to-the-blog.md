@@ -2,6 +2,7 @@
 layout: post
 title: "Welcome to the blog"
 date: 2026-02-08
+published: false
 ---
 
 This is your first blog post. You can edit or delete it and start writing your own.
