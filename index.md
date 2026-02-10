@@ -19,9 +19,10 @@ I also spent a couple of wonderful summers as a part of the Google Summer of Cod
 
 ## <span style="color:darkblue">News and Timeline </span>
 **2026**
-* **January** Our work at Meta: [Test-time Training for long-context LLMs](https://arxiv.org/abs/2512.13898) and [RL Scaling Laws](https://arxiv.org/abs/2510.13786) accepted at ICLR 2026!
+* **January** Two papers while at Meta accepted to ICLR 2026: [RL Scaling Laws](https://arxiv.org/abs/2510.13786) and [Test-time Training for long-context LLMs](https://arxiv.org/abs/2512.13898)! 
 
 **2025**
+* **December** Sharing our pre-print studying [Adam v/s Gauss-Newton](https://arxiv.org/abs/2510.13680)! Work with [Bingbin](https://clarabing.github.io), [Depen](https://depenm.github.io), and [Sham](https://shamulent.github.io)!
 * **May** Interning at Meta Superintelligence Lab (MSL) this Summer!
 
 **2024**
@@ -41,8 +42,8 @@ I also spent a couple of wonderful summers as a part of the Google Summer of Cod
 * **November**  Our work [evaluating model explanations](https://arxiv.org/abs/2012.00893) is accepted at TACL! In collaboration with [Danish](https://www.cs.cmu.edu/~ddanish/) and others at CMU.
 <!-- * **July**    Attending the 11th Lisbon Machine Learning Summer School ([LXMLS 2021](http://lxmls.it.pt/2021/)).
 <!-- * June 2021:    Volunteering at NAACL 2021. -->
-<!-- * **May**     Work with CDLI accepted at ACL SRW 2021. Gauging machine translation and sequence labeling for extremely low-resource languages. 
-* **May**     Starting as a Research Intern at Adobe’s Media and Data Science Research (MDSR). -->
+<!-- * **May**     Work with CDLI accepted at ACL SRW 2021. Gauging machine translation and sequence labeling for extremely low-resource languages.  -->
+<!-- * **May**     Starting as a Research Intern at Adobe’s Media and Data Science Research (MDSR). -->
 <!-- * May 2021:     Volunteering at ICLR 2021. -->
 <!-- * **February**  My first research paper accepted at PAKDD 2021. Detecting fake news early, with [Prof. Tanmoy Chakraborty](http://faculty.iiitd.ac.in/~tanmoy/) and [William Scott](https://www.linkedin.com/in/williamscottp/). -->
 

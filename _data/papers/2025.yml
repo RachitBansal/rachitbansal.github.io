@@ -18,7 +18,7 @@
   year: 2025
   img: scale_rl.png
   title: "The Art of Scaling Reinforcement Learning Compute for LLMs"
-  authors: "Devvrit Khatri, Lovish Madaan, Rishabh Tiwari, <u>Rachit Bansal</u>, Sai Surya Duvvuri, Manzil Zaheer, Inderjit S. Dhillon, David Brandfonbrener, Rishabh Agarwal"
+  authors: "Devvrit Khatri*, Lovish Madaan, Rishabh Tiwari, <u>Rachit Bansal</u>, Sai Surya Duvvuri, Manzil Zaheer, Inderjit S. Dhillon, David Brandfonbrener, Rishabh Agarwal"
   conf_name: ICLR (Oral Presentation)
   conf_year: 2026
   url: "https://arxiv.org/abs/2510.13786"
