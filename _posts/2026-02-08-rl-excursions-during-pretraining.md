@@ -2,7 +2,7 @@
 layout: blog_post
 title: "RL Excursions During Pre-Training: How Early Is Too Early for On-Policy Learning?"
 date: 2026-02-08
-published: false
+published: true
 excerpt: "We study what happens if we introduce on-policy reinforcement learning (RL) much earlier than the standard LLM pipeline. In a controlled math setting, RL can improve reasoning surprisingly early, sometimes matches the SFT→RL pipeline, and can either sharpen or expand the model’s output distribution depending on the training setup."
 ---
 
