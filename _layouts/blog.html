@@ -15,6 +15,16 @@ layout: default
   <ul class="blog-list">
     {% for post in site.posts %}
     <li class="blog-card">
+      {% if post.external_url %}
+      <a href="{{ post.external_url }}" class="blog-card-link" target="_blank" rel="noopener">
+        <span class="blog-card-date">{{ post.date | date: "%B %d, %Y" }}</span>
+        <h2 class="blog-card-title">{{ post.title }}</h2>
+        {% if post.excerpt %}
+        <p class="blog-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 28 }}</p>
+        {% endif %}
+        <span class="blog-card-read">Read more ↗</span>
+      </a>
+      {% else %}
       <a href="{{ post.url | prepend: site.baseurl }}" class="blog-card-link">
         <span class="blog-card-date">{{ post.date | date: "%B %d, %Y" }}</span>
         <h2 class="blog-card-title">{{ post.title }}</h2>
@@ -23,6 +33,7 @@ layout: default
         {% endif %}
         <span class="blog-card-read">Read more →</span>
       </a>
+      {% endif %}
     </li>
     {% endfor %}
   </ul>
